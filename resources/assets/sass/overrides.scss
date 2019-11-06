@@ -1,3 +1,19 @@
+/* ==================================== */
+/* Text overrides*/
+/* ==================================== */
+
+.is-muted{
+  color: $grey-light !important;
+}
+
+a.is-muted:hover{
+  color: $grey !important;
+}
+
+/* ==================================== */
+/* Dropdown overrides*/
+/* ==================================== */
+
 .dropdown{
     position: relative;
     .dropdown-menu{
