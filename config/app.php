@@ -179,6 +179,7 @@ return [
 
 
         Laratrust\LaratrustServiceProvider::class,
+        DevMarketer\EasyNav\EasyNavServiceProvider::class,
 
     ],
 
@@ -230,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Laratrust'   => Laratrust\LaratrustFacade::class,
+        'Nav' => DevMarketer\EasyNav\EasyNavFacade::class,
 
     ],
 
