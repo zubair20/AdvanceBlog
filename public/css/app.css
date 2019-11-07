@@ -16225,7 +16225,7 @@ a.is-muted:hover {
   bottom: 0;
   width: 200px;
   background-color: white;
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: 100;
   -webkit-transition: left 0.3s ease-in-out;
   transition: left 0.3s ease-in-out;

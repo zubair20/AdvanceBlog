@@ -17,6 +17,6 @@ return [
     | the class defined here will be used if no other custom class is provided.
     |
     */
-    'default_class' => 'is_active',
+    'default_class' => 'is-active',
 
 ];
