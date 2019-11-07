@@ -16187,11 +16187,9 @@ label.panel-block:hover {
   background: rgba(255, 56, 96, 0.05);
 }
 
-/* ==================================== */
-
-/* Text overrides*/
-
-/* ==================================== */
+/* ========================================
+   ============ Text Overrides ===========
+   ======================================== */
 
 .is-muted {
   color: #b5b5b5 !important;
@@ -16209,13 +16207,40 @@ a.is-muted:hover {
   height: 4.5rem;
 }
 
-.side-menu {
-  position: absolute;
+.navbar-brand .brand-item {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-brand .brand-item {
+    margin-right: 15px;
+  }
+}
+
+#admin-side-menu {
+  position: fixed;
   top: 4rem;
+  left: -200px;
   bottom: 0;
   width: 200px;
   background-color: white;
   overflow-y: scroll;
+  z-index: 100;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+}
+
+#admin-side-menu.is-active {
+  left: 0;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1024px) {
+  #admin-side-menu {
+    left: 0;
+  }
 }
 
 .management-area {
@@ -16239,6 +16264,22 @@ a.is-muted:hover {
 .menu-list li ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.navbar-burger {
+  border: none;
+}
+
+#admin-slideout-button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#admin-slideout-button.is-active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .m-t-5 {
